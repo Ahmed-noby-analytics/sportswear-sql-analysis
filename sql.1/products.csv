@@ -1,0 +1,31 @@
+product_id,product_name,category,unit_price,unit_cost
+1,Road Runner Pro,Running Shoes,3200,1861.03
+2,Trail Grip,Running Shoes,2900,1521.37
+3,Light Racer,Running Shoes,2400,1430.31
+4,Daily Trainer,Running Shoes,1800,1023.39
+5,Gym Flex,Training Shoes,2100,978.62
+6,Cross Trainer X,Training Shoes,2500,1539.64
+7,Court Low,Training Shoes,1700,984.97
+8,Dry-Fit Tee,T-Shirts,450,262.63
+9,Cotton Basic Tee,T-Shirts,300,141.53
+10,Performance Tee,T-Shirts,550,289.61
+11,Sleeveless Tank,T-Shirts,350,179.56
+12,Long Sleeve Tee,T-Shirts,650,394.91
+13,Run Shorts,Shorts,420,234.97
+14,Training Shorts,Shorts,480,283.14
+15,Basketball Shorts,Shorts,520,273.2
+16,High-Waist Leggings,Leggings,750,366.47
+17,Compression Tights,Leggings,850,462.64
+18,Seamless Leggings,Leggings,900,414.76
+19,Zip Hoodie,Hoodies & Jackets,1200,708.84
+20,Pullover Hoodie,Hoodies & Jackets,1100,613.12
+21,Windbreaker,Hoodies & Jackets,1600,926.2
+22,Padded Jacket,Hoodies & Jackets,2200,1122.59
+23,Sport Socks 3-Pack,Socks & Accessories,150,92.25
+24,Headband,Socks & Accessories,80,48.15
+25,Cap,Socks & Accessories,250,145.58
+26,Sweat Wristbands,Socks & Accessories,90,43.48
+27,Gym Gloves,Socks & Accessories,300,158.8
+28,Gym Duffel Bag,Bags & Equipment,900,411.7
+29,Yoga Mat,Bags & Equipment,650,309.55
+30,Water Bottle,Bags & Equipment,180,101.9
