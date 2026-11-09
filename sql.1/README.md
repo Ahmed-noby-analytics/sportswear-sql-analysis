@@ -384,18 +384,4 @@ ORDER BY profit DESC;
 4. **Fix cancellations and returns.** Installments and Cash on Delivery have the highest problem rates, and about 10% of revenue is lost (Q6).
 5. **Protect the best customers and cities.** 10 customers bring 13% of revenue and 3 cities bring 66% of profit (Q4, Q7).
 
-## ⚠️ Limitations
-- The data is synthetic, so the patterns do not come from real customer behaviour.
-- Cost per unit is assumed constant over time, and prices were raised in 2025, which also lifts the 2025 margin.
-- Revenue excludes shipping and taxes, and the discount is applied at order level.
-- 18 customers have no city, so they are left out of the city analysis.
-
-## ▶️ How to Run
-1. Create the tables with section 1 of `sportswear_sql_analysis.sql`.
-2. Load the four CSV files from the `data` folder into the tables (customers, products, orders, order_items).
-3. Run the rest of the script: the data checks, the `v_sales` view and the 8 business questions.
-
-## 📬 Contact
-**Ahmed Noby** | Aspiring Data Analyst
-📧 Email: _add your email_
-🔗 LinkedIn: _add your LinkedIn link_
+Ahmed Noby // DATA ANALYSIS
