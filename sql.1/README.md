@@ -6,13 +6,12 @@ The project has two main files: the SQL script with all the queries, and this RE
 
 ## 🗂 Project Structure
 ```
-sportswear-sql-project/
+sql.1/
 │
-├── data/
-│   ├── customers.csv
-│   ├── products.csv
-│   ├── orders.csv
-│   └── order_items.csv
+├── customers.csv
+├── products.csv
+├── orders.csv
+└── order_items.csv
 │
 ├── sportswear_sql_analysis.sql
 └── README.md
