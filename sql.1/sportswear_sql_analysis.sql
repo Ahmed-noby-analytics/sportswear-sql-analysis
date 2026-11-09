@@ -1,15 +1,6 @@
-/* ------------------------------------------------------------
-   Project: Sportswear Store SQL Analysis
-   Description: Synthetic sales data (4 CSV files) loaded into a
-   SQLite database. This script creates the tables, checks the data,
-   and answers 8 business questions aimed at increasing profit.
-   Profit = Revenue - Cost, on Completed orders only.
-------------------------------------------------------------- */
 
 
-/* ============================
-      1. CREATE TABLES
-=============================== */
+/*1. CREATE TABLES*/
 
 DROP TABLE IF EXISTS order_items;
 DROP TABLE IF EXISTS orders;
@@ -51,20 +42,9 @@ CREATE TABLE order_items (
 );
 
 
-/* ============================
-      2. IMPORT DATA
-=============================== */
 
--- The four CSV files in the data folder were loaded into the tables above
--- (for example with pandas to_sql, or Import Table from CSV in DB Browser for SQLite).
--- Load order: customers, products, orders, order_items.
+/*   2. DATA CHECKS */
 
-
-/* ============================
-      3. DATA CHECKS
-=============================== */
-
--- Check 1: number of rows in each table
 SELECT 'customers' AS table_name, COUNT(*) AS total_rows FROM customers
 UNION ALL
 SELECT 'products', COUNT(*) FROM products
@@ -74,24 +54,21 @@ UNION ALL
 SELECT 'order_items', COUNT(*) FROM order_items;
 
 
--- Check 2: customers with a missing city
+/* Check city*/
 SELECT COUNT(*) AS customers_missing_city
 FROM customers
 WHERE city IS NULL;
 
 
--- Check 3: orders by status
+-- Check status
 SELECT order_status, COUNT(*) AS orders
 FROM orders
 GROUP BY order_status;
 
 
-/* ============================
-      4. SALES VIEW
-=============================== */
 
--- One row per order item, with revenue and cost calculated.
--- Revenue = quantity x unit_price x (1 - discount). Cost = quantity x unit_cost.
+     -- 3. SALES VIEW
+
 CREATE VIEW v_sales AS
 SELECT
     o.order_id,
@@ -112,9 +89,9 @@ JOIN orders o   ON o.order_id   = oi.order_id
 JOIN products p ON p.product_id = oi.product_id;
 
 
-/* ============================
-      5. BUSINESS QUESTIONS
-=============================== */
+
+    --  4. BUSINESS QUESTIONS
+
 
 -- Q1) Which categories bring the highest profit and the best margin?
 SELECT category,
